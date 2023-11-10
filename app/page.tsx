@@ -37,7 +37,7 @@ export default function Home() {
               <Flex>
                 <span className="text-blue-500">Contact us</span>
                 <Button className="IconButton" onClick={handleNav}>
-                  {open ? <HamburgerMenuIcon /> : <Cross1Icon />}{" "}
+                  {!open ? <HamburgerMenuIcon /> : <Cross1Icon />}{" "}
                 </Button>
               </Flex>
             </Flex>
@@ -60,7 +60,7 @@ export default function Home() {
         <Theme
           appearance="light"
           className={
-            open
+            !open
               ? "rounded-t-3xl h-screen absolute top-0 w-screen"
               : "rounded-t-3xl h-screen"
           }>
